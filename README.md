@@ -4,7 +4,7 @@ Tutorial on how to pass data between Views in SwiftUI
 1. Add these properties to your SwiftUI View:
 ```Swift
 @State var presentingModal = false //This will control the view presentation
-@State var dataPassedBack = "Nothing. Click button ^" //The data passed back wil show up here
+@State var dataPassedBack = "Nothing. Click button ^" //The data passed back will show up here
 ```
 
 2. Add a button in body to toggle showing the other view
