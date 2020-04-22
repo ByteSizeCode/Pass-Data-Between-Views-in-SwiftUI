@@ -25,7 +25,7 @@ var body: some View {
         VStack(spacing: 30) {
             Button(action: {self.presentingModal.toggle()}) {Text("Get Input From Other View")}
         }
-        .sheet(isPresented: $presentingModal) { ModalView(presentedAsModal: self.$presentingModal, input: self.$dataPassedBack) } //3. Present View on toggle and pass in eventName
+        .sheet(isPresented: $presentingModal) { ModalView(presentedAsModal: self.$presentingModal, input: self.$dataPassedBack) } //3. Present View on toggle and pass in $dataPassedBack
  }
 ```
 
