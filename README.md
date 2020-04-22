@@ -1,4 +1,4 @@
-# Pass-Data-Between-Views-in-SwuftUI
+# Passing Data Between Views in SwuftUI
 Tutorial on how to pass data between Views in SwuftUI
 
 1. Add these properties to your SwiftUI View:
