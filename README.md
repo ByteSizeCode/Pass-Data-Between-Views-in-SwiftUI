@@ -25,7 +25,7 @@ var body: some View {
         VStack(spacing: 30) {
             Button(action: {self.presentingModal.toggle()}) {Text("Get Input From Other View")}
         }
-        .sheet(isPresented: $presentingModal) { ModalView(presentedAsModal: self.$presentingModal, input: self.$dataPassedBack) } //2. Present View on toggle and pass in eventName
+        .sheet(isPresented: $presentingModal) { ModalView(presentedAsModal: self.$presentingModal, input: self.$dataPassedBack) } //3. Present View on toggle and pass in eventName
  }
 ```
 
@@ -34,6 +34,11 @@ var body: some View {
 ```Swift
 Text(self.dataPassedBack)
 ```
+
+Here is a working project demonstrating this concept:
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 ContentView.swift:
 ```swift
@@ -75,7 +80,7 @@ struct ModalView: View {
             TextField("Type Here", text: $name)
             Button("Dismiss") {
                 self.presentedAsModal = false //Hide this view
-                self.input = self.name //Set value to pass back
+                self.input = self.name //Set value to pass back by reference
             }
         }
     }
