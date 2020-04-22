@@ -70,7 +70,7 @@ ModalView.swift:
 import SwiftUI
 
 struct ModalView: View {
-    @Binding var presentedAsModal: Bool //Toggle hiding/howing this view
+    @Binding var presentedAsModal: Bool //Toggle hiding/showing this view
     @State public var name: String = "" //The TextField binds to this and saves its text here
     @Binding var input: String //Our link to pass back the data
     
